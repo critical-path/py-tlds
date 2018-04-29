@@ -117,8 +117,8 @@ class TopLevelDomainGetter(object):
                 self.results["tlds"].append(datum)
 
     def get(self):
-        """Call private methods to get, validate, and parse data.
-        Raise ValidationError if MD5 digests differ.
+        """Calls private methods to get, validate, and parse data.
+        Raises ValidationError if MD5 digests differ.
 
 
         Returns
