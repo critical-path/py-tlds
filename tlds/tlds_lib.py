@@ -96,7 +96,7 @@ class TopLevelDomainGetter(object):
             self.__is_valid__ = True
 
     def __get_tlds__(self):
-        """Parse TLD data, looking for version number,
+        """Parses TLD data, looking for version number,
        last update, and valid TLDs."""
 
         data = self.__data__["tld"].split("\n")
