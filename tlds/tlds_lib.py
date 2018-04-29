@@ -90,9 +90,7 @@ class TopLevelDomainGetter(object):
         self.__digests__["expected"] = digest
 
     def __compare_digests__(self):
-        """Compares MD5 digests.
-           If digests differ, then someone tampered
-           with TLD data before we retrieved it."""
+        """Compares MD5 digests."""
 
         if self.__digests__["actual"] == self.__digests__["expected"]:
             self.__is_valid__ = True
@@ -139,5 +137,4 @@ class TopLevelDomainGetter(object):
             return self.results
 
         else:
-            raise ValidationError("Error: Our MD5 digest did not match that provided by IANA.\
-              This suggests that someone tampered with the list of TLDs found at {} before we retrieved it.".format(self.__urls__["tld"]))
+            raise ValidationError("Our MD5 digest ({}) did not match that provided by IANA ({}).  Please try again.".format(self.__digests__["actual"], self.__digests__["expected"]))
