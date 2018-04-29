@@ -14,7 +14,7 @@ from tlds.tlds_err import ValidationError
 
 
 class TopLevelDomainGetter(object):
-    """Retrieves and validates the official list of top-level domains (TLDs)
+    """Retrieves and validates a list of top-level domains (TLDs)
     from the Internet Assigned Names Authority (IANA).
 
 
