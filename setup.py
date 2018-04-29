@@ -16,7 +16,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3"
     ],
-    keywords="python util tlds iana",
+    keywords="python util top-level-domains tlds internet-assigned-names-authority iana",
     packages=find_packages(),
     install_requires=[
         "click",
