@@ -139,4 +139,5 @@ class TopLevelDomainGetter(object):
             return self.results
 
         else:
-            raise ValidationError("Error: Our MD5 digest did not match that provided by IANA.  This suggests that someone tampered with the list of TLDs found at {} we retrieved it.".format(self.__urls__["tld"]))
+            raise ValidationError("Error: Our MD5 digest did not match that provided by IANA.\
+              This suggests that someone tampered with the list of TLDs found at {} before we retrieved it.".format(self.__urls__["tld"]))
