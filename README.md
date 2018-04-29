@@ -8,7 +8,7 @@ py-tlds is a util that retrieves and validates a list of top-level domains (TLDs
 py-tlds requires Python 3.x as well as the pip, click, requests, pylint, pytest, pytest-cov, and responses packages.
 
 
-## Installing py-tlds with test cases or testing dependencies
+## Installing py-tlds with test cases and testing dependencies
 
 1. Clone or download this repository.
 
