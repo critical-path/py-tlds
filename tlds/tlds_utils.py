@@ -2,7 +2,7 @@ from json import dumps
 
 
 def write_results(tlds=None):
-    """Write results to disk.
+    """Writes results to disk.
 
     Parameters
     ----------
