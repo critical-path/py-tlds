@@ -26,7 +26,6 @@ setup(
     ],
     extras_require={
         "test": [
-            "pylint",
             "pytest",
             "pytest-cov",
             "responses"
