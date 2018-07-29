@@ -22,6 +22,5 @@ install:
   - pip install --editable .[test] .
 
 script:
-  - pylint tlds
   - cd ./tests
   - py.test -vv --cov=tlds --cov-report=term-missing
