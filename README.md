@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/critical-path/py-tlds.svg?branch=master)](https://travis-ci.com/critical-path/py-tlds)
+
 ## py-tlds v1.0.0
 
 py-tlds is a util that retrieves and validates a list of top-level domains (TLDs) from the Internet Assigned Names Authority.
