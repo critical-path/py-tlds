@@ -1,3 +1,6 @@
+"""Utility function used by py-tlds."""
+
+
 from json import dumps
 
 
@@ -8,6 +11,10 @@ def write_results(tlds=None):
     ----------
     tlds : ordered dict or str
         Contains version number, last update, and valid TLDs
+
+    Returns
+    -------
+    N/A
     """
 
     filename = "iana-tlds.json"
