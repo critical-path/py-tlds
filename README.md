@@ -65,13 +65,7 @@ write_results(tlds)
 
 ## Testing py-tlds after installation
 
-1. Run pylint.
-
-```
-pylint tlds 
-```
-
-2. Change to the tests directory.
+1. Change to the tests directory.
 
 ```
 cd ./tests
