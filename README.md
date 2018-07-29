@@ -75,8 +75,8 @@ pylint tlds
 cd ./tests
 ```
 
-3. Run pytest with with -v, --cov, and cov-report options.
+3. Run pytest with with -vv, --cov, and cov-report options.
 
 ```
-pytest -v --cov=tlds --cov-report=term-missing
+pytest -vv --cov=tlds --cov-report=term-missing
 ```
