@@ -1,4 +1,6 @@
-"""util that retrieves and validates a list of top-level domains from the internet assigned names authority."""
+"""util that retrieves and validates a list of 
+   top-level domains from the internet assigned 
+   names authority."""
 
 
 from tlds.tlds_lib import TopLevelDomainGetter
