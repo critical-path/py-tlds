@@ -1,2 +1,6 @@
-class ValidationError(ValueError):
+"""Error used by py-tlds."""
+
+
+class ValidationError(Exception):
+    
     pass
