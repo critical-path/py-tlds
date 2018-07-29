@@ -1,3 +1,6 @@
+"""The library of functions used by py-tlds."""
+
+
 from collections import OrderedDict
 
 from hashlib import md5
