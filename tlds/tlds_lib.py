@@ -20,7 +20,6 @@ class TopLevelDomainGetter(object):
     """Retrieves and validates a list of top-level domains (TLDs)
     from the Internet Assigned Names Authority (IANA).
 
-
     Returns
     -------
     self.results : ordered dict
@@ -120,7 +119,6 @@ class TopLevelDomainGetter(object):
     def get(self):
         """Calls private methods to get, validate, and parse data.
         Raises ValidationError if MD5 digests differ.
-
 
         Returns
         -------
