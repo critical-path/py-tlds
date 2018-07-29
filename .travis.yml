@@ -22,4 +22,4 @@ install:
 
 script:
   - cd ./tests
-  - py.test -vv --cov=tlds --cov-report=term-missing
+  - py.test -vv --cov=tlds --cov-report=term-missing --cov-config=.coveragerc
