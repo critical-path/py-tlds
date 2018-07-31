@@ -113,7 +113,7 @@ class TopLevelDomainGetter(object):
                 self.results["version"] = version
                 self.results["updated"] = updated
 
-            elif match(self.__patterns__["tld"], datum):
+            if match(self.__patterns__["tld"], datum):
                 self.results["tlds"].append(datum)
 
     def get(self):
