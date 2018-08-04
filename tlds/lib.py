@@ -13,7 +13,7 @@ from re import (
 
 from requests import get
 
-from tlds.tlds_err import ValidationError
+from tlds.err import ValidationError
 
 
 class TopLevelDomainGetter(object):

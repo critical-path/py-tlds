@@ -33,7 +33,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "tlds=tlds.tlds_cli:get_tlds"
+            "tlds=tlds.cli:get_tlds"
         ]
     }
 )

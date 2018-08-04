@@ -3,13 +3,13 @@ from os import (
     stat
 )
 
-from tlds.tlds_cli import get_tlds
+from tlds.cli import get_tlds
 
-from tlds.tlds_err import ValidationError
+from tlds.err import ValidationError
 
-from tlds.tlds_lib import TopLevelDomainGetter
+from tlds.lib import TopLevelDomainGetter
 
-from tlds.tlds_utils import write_results
+from tlds.utils import write_results
 
 from click.testing import CliRunner
 

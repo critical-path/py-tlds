@@ -9,9 +9,9 @@ from click import (
     option
 )
 
-from tlds.tlds_lib import TopLevelDomainGetter
+from tlds.lib import TopLevelDomainGetter
 
-from tlds.tlds_utils import write_results
+from tlds.utils import write_results
 
 
 @command()
