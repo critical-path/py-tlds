@@ -14,21 +14,23 @@ py-tlds requires Python 3.x as well as the pip, click, requests, pytest, pytest-
 
 1. Clone or download this repository.
 
-2. Run pip with the install command and the --editable option.
+2. Using sudo, run pip with the install command and the --editable option.
 
 ```
-pip install --editable .[test]
+sudo pip install --editable .[test]
 ```
+
 
 ## Installing py-tlds without test cases or testing dependencies
 
 1. Clone or download this repository.
 
-2. Run pip with the install command.
+2. Using sudo, run pip with the install command.
 
 ```
 sudo pip install .
 ```
+
 
 ## Using py-tlds from the command line
 
@@ -44,6 +46,7 @@ To write the results to disk, run tlds with either the --write or the -w option.
 tlds --write
 tld -w
 ```
+
 
 ## Using py-tlds from within Python
 
@@ -62,6 +65,7 @@ tld_getter = TopLevelDomainGetter()
 tlds = tld_getter.get()
 write_results(tlds)
 ```
+
 
 ## Testing py-tlds after installation
 
