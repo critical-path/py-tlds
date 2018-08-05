@@ -18,8 +18,7 @@ python:
 # job phases
 
 install:
-  - pip install --editable .[test] .
+  - pip install --editable .[test]
 
 script:
-  - cd ./tests
-  - py.test -vv --cov=tlds --cov-branch --cov-report=term-missing --cov-config=.coveragerc
+  - py.test -vv --cov --cov-report=term-missing
