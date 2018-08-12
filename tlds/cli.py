@@ -1,4 +1,4 @@
-"""The command-line interface for py-tlds."""
+"""Command-line interface for py-tlds."""
 
 
 from json import dumps
