@@ -1,4 +1,4 @@
-"""The library of functions used by py-tlds."""
+"""Library used by py-tlds."""
 
 
 from collections import OrderedDict
