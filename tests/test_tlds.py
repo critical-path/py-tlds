@@ -53,7 +53,7 @@ def test_lib_with_invalid_tlds():
         tld_getter = TopLevelDomainGetter()
         tlds = tld_getter.get()
 
-    assert "Our MD5 digest ({}) did not match that provided by IANA ({}).  Please try again.".format(tld_getter.__digests__["actual"], tld_getter.__digests__["expected"]) in str(exception.value)
+    assert "Our MD5 digest ({}) did not match that provided by IANA ({}).  Please try again.".format(tld_getter._digests["actual"], tld_getter._digests["expected"]) in str(exception.value)
 
 
 @activate
