@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/critical-path/py-tlds.svg?branch=master)](https://travis-ci.com/critical-path/py-tlds)
+[![Build Status](https://travis-ci.com/critical-path/py-tlds.svg?branch=master)](https://travis-ci.com/critical-path/py-tlds) [![Coverage Status](https://coveralls.io/repos/github/critical-path/py-tlds/badge.svg)](https://coveralls.io/github/critical-path/py-tlds)
 
 ## py-tlds v1.0.0
 
@@ -7,7 +7,7 @@ py-tlds is a util that retrieves and validates a list of top-level domains (TLDs
 
 ## Dependencies
 
-py-tlds requires Python 3.x as well as the pip, click, requests, pytest, pytest-cov, and responses packages.
+py-tlds requires Python 3.x as well as the pip, click, requests, coveralls, pytest, pytest-cov, and responses packages.
 
 
 ## Installing py-tlds with test cases and testing dependencies
