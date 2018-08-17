@@ -26,6 +26,7 @@ setup(
     ],
     extras_require={
         "test": [
+            "coveralls",
             "pytest",
             "pytest-cov",
             "responses"
