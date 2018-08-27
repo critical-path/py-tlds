@@ -18,10 +18,10 @@ python:
 # job phases
 
 install:
-  - radon mi --show tlds
   - pip install --editable .[test]
 
 script:
+  - radon mi --show tlds
   - py.test -vv --cov --cov-report=term-missing
 
 after_success:
