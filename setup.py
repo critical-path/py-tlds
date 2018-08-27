@@ -29,6 +29,7 @@ setup(
             "coveralls",
             "pytest",
             "pytest-cov",
+            "radon",
             "responses"
         ]
     },

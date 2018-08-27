@@ -17,6 +17,7 @@ __Testing__:
 - coveralls
 - pytest
 - pytest-cov
+- radon
 - responses
 
 
@@ -79,7 +80,13 @@ write_results(tlds)
 
 ## Testing py-tlds after installation
 
-1. Run `pytest` with with `-vv`, `--cov`, and `cov-report` options.
+1. Run `radon` with the `mi` command and the `--show` option.
+
+```
+radon mi --show tlds
+```
+
+2. Run `pytest` with with `-vv`, `--cov`, and `cov-report` options.
 
 ```
 pytest -vv --cov --cov-report=term-missing
