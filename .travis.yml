@@ -18,6 +18,7 @@ python:
 # job phases
 
 install:
+  - radon mi --show tlds
   - pip install --editable .[test]
 
 script:
