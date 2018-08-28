@@ -15,6 +15,7 @@ __Usage__:
 
 __Testing__:
 - coveralls
+- flake8
 - pytest
 - pytest-cov
 - radon
@@ -86,7 +87,13 @@ write_results(tlds)
 radon mi --show tlds
 ```
 
-2. Run `pytest` with with `-vv`, `--cov`, and `cov-report` options.
+2. Run `flake8` with the `--count` option.
+
+```
+flake8 --count tlds
+```
+
+3. Run `pytest` with with `-vv`, `--cov`, and `cov-report` options.
 
 ```
 pytest -vv --cov --cov-report=term-missing

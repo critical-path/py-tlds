@@ -22,6 +22,7 @@ install:
 
 script:
   - radon mi --show tlds
+  - flake8 --count tlds
   - py.test -vv --cov --cov-report=term-missing
 
 after_success:
