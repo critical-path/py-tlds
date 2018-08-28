@@ -95,15 +95,15 @@ class TopLevelDomainGetter(object):
             self._is_valid = True
 
     def _get_tlds(self):
-        """Parses TLD data, looking for version number, 
+        """Parses TLD data, looking for version number,
            last update, and valid TLDs."""
 
         data = self._data["tld"].split("\n")
 
         for datum in data:
             if search(self._patterns["other"], datum):
-                other = search(self._patterns["other"], datum).group().split(",")
-                version, updated = other
+                other = search(self._patterns["other"], datum).group()
+                version, updated = other.split(",")
 
                 self.results["version"] = version.strip()
                 self.results["updated"] = updated.strip()
@@ -132,4 +132,9 @@ class TopLevelDomainGetter(object):
             return self.results
 
         else:
-            raise ValidationError("Our MD5 digest ({}) did not match that provided by IANA ({}).  Please try again.".format(self._digests["actual"], self._digests["expected"]))
+            message = "Our MD5 digest ({}) did not match that " +\
+                      "provided by IANA ({}).  Please try again.".format(
+                          self._digests["actual"],
+                          self._digests["expected"]
+                      )
+            raise ValidationError(message)

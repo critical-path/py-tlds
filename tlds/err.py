@@ -3,7 +3,7 @@
 
 class ValidationError(Exception):
     """ValidationError
-    
+
     Parameters
     ----------
     message : str
