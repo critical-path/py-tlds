@@ -132,9 +132,8 @@ class TopLevelDomainGetter(object):
             return self.results
 
         else:
-            message = "Our MD5 digest ({}) did not match that " +\
-                      "provided by IANA ({}).  Please try again.".format(
-                          self._digests["actual"],
-                          self._digests["expected"]
-                      )
+            message = "Our MD5 digest ({}) ".format(self._digests["actual"]) +\
+                      "did not match that provided " +\
+                      "by IANA ({}).  ".format(self_digests["expected"]) +\
+                      "Please try again."
             raise ValidationError(message)
